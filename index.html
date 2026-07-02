@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Títulos Mundiais do Brasil</title>
+    <style>
+        body {
+            /* Substitua pelo link ou nome do arquivo da sua imagem de fundo */
+            background-image: url('imagem-de-fundo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+            margin-bottom: 40px;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .coluna-esquerda, .coluna-direita {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .item-selecao {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro transparente para destacar o texto */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .item-selecao img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .item-selecao span {
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Titulos mundiais do Brasil</h1>
+
+    <div class="conteudo">
+        <div class="coluna-esquerda">
+            <div class="item-selecao">
+                <img src="link-da-imagem-1958.jpg" alt="Brasil 1958">
+                <span>Campeão Mundial 1958</span>
+            </div>
+            <div class="item-selecao">
+                <img src="link-da-imagem-1962.jpg" alt="Brasil 1962">
+                <span>Campeão Mundial 1962</span>
+            </div>
+            <div class="item-selecao">
+                <img src="link-da-imagem-1970.jpg" alt="Brasil 1970">
+                <span>Campeão  Mundial 1970</span>
+            </div>
+        </div>
+
+        <div class="coluna-direita">
+            <div class="item-selecao">
+                <img src="link-da-imagem-1994.jpg" alt="Brasil 1994">
+                <span>Campeão Mundial 1994</span>
+            </div>
+            <div class="item-selecao">
+                <img src="link-da-imagem-2002.jpg" alt="Brasil 2002">
+                <span>Campeão Mundial 2002</span>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
