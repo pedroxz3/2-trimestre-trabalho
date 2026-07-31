@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campeão Mundial 2002</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#ddd;
+}
+
+.container{
+    position:relative;
+    width:760px;
+    height:515px;
+    background:url("ronaldo2002.jpg") center/cover no-repeat;
+    overflow:hidden;
+}
+
+/* Camada escura sobre a imagem */
+.container::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.35);
+}
+
+.conteudo{
+    position:relative;
+    z-index:1;
+    padding:40px 60px;
+    color:#333;
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:35px;
+    font-weight:bold;
+}
+
+p{
+    font-size:19px;
+    line-height:1.5;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.info{
+    font-size:18px;
+    line-height:1.45;
+}
+
+.info strong{
+    color:#222;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="conteudo">
+
+        <h1>Campeão Mundial 2002</h1>
+
+        <p>
+            A Copa do Mundo de 2002 foi realizada em conjunto pela
+            <strong>Coreia do Sul</strong> e pelo
+            <strong>Japão</strong>, marcando a primeira vez que o torneio foi
+            sediado na Ásia. A Seleção Brasileira conquistou o pentacampeonato
+            de forma invicta, derrotando a Alemanha por 2×0 na final, com dois
+            gols de Ronaldo Fenômeno.
+        </p>
+
+        <div class="info">
+            <p><strong>Campanha:</strong> 7 jogos, 7 vitórias, 18 gols marcados e 4 gols sofridos.</p>
+
+            <p><strong>Artilheiro:</strong> Ronaldo marcou 8 gols, levando a Chuteira de Ouro.</p>
+
+            <p><strong>Destaque:</strong> O trio de ataque "RRR" (Ronaldo, Rivaldo e Ronaldinho Gaúcho) foi a grande força da equipe comandada pelo técnico Luiz Felipe Scolari.</p>
+
+            <p><strong>Capitão:</strong> Cafu levantou a taça.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
